@@ -65,7 +65,7 @@ public class validarExpresion {
 				Stack<Character> stackElementos = new Stack<Character>();
 				String expresion = txtExpresion.getText();
 				char arrayElementos[] = expresion.toCharArray();
-				boolean valido = false;
+				boolean valido = true;
 				
 				for (int i = 0; i < arrayElementos.length; i++) {
 //					System.out.println(arrayElementos[i]);
@@ -82,7 +82,7 @@ public class validarExpresion {
 					}
 				}
 				
-				if (valido == true) {
+				if (valido) {
 					JOptionPane.showMessageDialog(null, "La expresion: " + expresion + " es correcta");
 				} else {
 					JOptionPane.showMessageDialog(null, "La expresion: " + expresion + " es incorrecta");

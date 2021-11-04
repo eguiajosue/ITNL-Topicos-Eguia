@@ -20,7 +20,6 @@ import java.awt.event.MouseEvent;
 
 public class QuizApp {
 	
-	
 	String[] preguntas = 	{
 			"Pregunta #1: Científicamente ¿cuál película es considerada de las mas aterradoras?",
 			"Pregunta #2: ¿En que año se estreó la primer pelicula de STAR WARS?",
@@ -30,11 +29,11 @@ public class QuizApp {
 		};
 
 	String[][] respuestas = {
-				{"Insidious", "Sinister", "The Exorcist", "El Conjuro", "Chucky"}, 									// Sinister
-				{"1969", "1977", "1980", "1976", "2000"}, 															// 1977
-				{"Cybertron", "Unicron", "Primus", "Gigantion", "Tierra"}, 											// Cybertron
-				{"Mark Zuckemberg", "Andrew Garfield", "Justin Timberlake", "Jesse Eisenberg", "Max Minghella"}, 	// Jesse Eisenberg
-				{"Slytherin", "Ravenclaw", "Hufflepuff", "Hogwards", "Gryffindor"}									// Gryffindor
+				{"Insidious", "Sinister", "The Exorcist", "El Conjuro", "Chucky"}, 									// B) Sinister
+				{"1969", "1977", "1980", "1976", "2000"}, 															// B) 1977
+				{"Cybertron", "Unicron", "Primus", "Gigantion", "Tierra"}, 											// A) Cybertron
+				{"Mark Zuckemberg", "Andrew Garfield", "Justin Timberlake", "Jesse Eisenberg", "Max Minghella"}, 	// D) Jesse Eisenberg
+				{"Slytherin", "Ravenclaw", "Hufflepuff", "Hogwards", "Gryffindor"}									// E) Gryffindor
 			};	
 	
 	char[] respuestasCorrectas = 	{'B', 'B', 'A', 'D', 'E'};
@@ -127,18 +126,6 @@ public class QuizApp {
 		} else {
 			lblCantidadCalificacion.setForeground(new Color(255, 0, 0));
 		}
-		
-		
-		if (resultadoFinal >= 4 ) {
-			lblCantidadAciertos.setForeground(new Color(34,139,34));
-		} else if (resultadoFinal < 4 && resultadoFinal >= 2) {
-			lblCantidadAciertos.setForeground(new Color(204, 204, 0));
-		} else {
-			lblCantidadAciertos.setForeground(new Color(255, 0, 0));
-		}
-		
-		// JOptionPane.showMessageDialog(null, "CALIFICACIÓN FINAL: " + resultadoFinal + "\nACIERTOS: " + preguntasCorrectas + "/" + totalPreguntas);
-		
 	}
 	
 	private JFrame frmQuizApp;
